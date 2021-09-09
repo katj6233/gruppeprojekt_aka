@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/*Kontaktformular start*/
+
+form label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.form_felt {
+  display: grid;
+}
+
+form {
+  grid-column: 2/3;
+  padding: 1.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  border: 0;
+  padding: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  color: black;
+}
+
+.form_section article {
+  text-align: center;
+}
+
+.form_section {
+  padding: 1rem;
+  padding-top: 15vw;
+}
+/*Kontaktformular slut*/
