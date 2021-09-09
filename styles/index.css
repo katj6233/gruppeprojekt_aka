@@ -54,11 +54,4 @@ button {
   #section_kvalitet #section_wrapper h2 {
     padding-bottom: 1rem;
   }
-
-  footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }

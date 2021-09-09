@@ -19,8 +19,8 @@ button {
   cursor: pointer;
   color: #ffffff;
   font-family: "poppins";
-  font-size: 20px;
-  padding: 14px 30px;
+  font-size: 18px;
+  padding: 9px 29px;
   text-decoration: none;
   border: none;
 }
@@ -46,6 +46,14 @@ footer p {
 footer {
   background-color: #072040;
   padding-top: 1rem;
+}
+
+.om_os {
+  padding-top: 2rem;
+}
+
+.find_os {
+  padding-top: 2rem;
 }
 
 /*  .......... Nav ......... */
@@ -187,6 +195,21 @@ nav {
 @media (min-width: 900px) {
   .nav_links {
     width: 55%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .om_os {
+    padding-top: 0;
+  }
+
+  .find_os {
+    padding-top: 0;
   }
 }
 
