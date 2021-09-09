@@ -13,6 +13,18 @@ p {
   line-height: 1.5rem;
 }
 
+button {
+  background-color: #072040;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "poppins";
+  font-size: 20px;
+  padding: 14px 30px;
+  text-decoration: none;
+  border: none;
+}
+
 /*  .......... footer ......... */
 
 .social_loger {
@@ -102,13 +114,13 @@ nav {
 
 /*  .......... @Media ......... */
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   .nav_links {
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #5d4954;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -130,6 +142,12 @@ nav {
   .logo {
     margin-top: 10px;
     margin-right: 10px;
+  }
+
+  .social_loger img {
+    max-width: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .nav_toggle {
@@ -175,5 +193,12 @@ nav {
 @media (min-width: 1200px) {
   .nav_links {
     width: 50%;
+  }
+
+  .logo img {
+    max-width: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 75%;
   }
 }
