@@ -9,6 +9,33 @@ img {
   height: auto;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
+/*  .......... footer ......... */
+
+.social_loger {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.social_loger img {
+  max-width: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
+
+footer {
+  background-color: #072040;
+  padding-top: 1rem;
+}
+
 /*  .......... Nav ......... */
 
 nav {
@@ -47,10 +74,6 @@ nav {
 /*  .......... logo ......... */
 
 .logo {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 16px;
-  color: white;
   transition: ease-in 0.1s;
   cursor: pointer;
 }
