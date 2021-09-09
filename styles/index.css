@@ -1,0 +1,18 @@
+/* .baggrund {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  background-position: 40% 60%;
+} */
+
+h2 {
+  text-align: center;
+}
+
+.knap_midte {
+  text-align: center;
+}
