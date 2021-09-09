@@ -94,9 +94,9 @@ nav {
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
   }
 
-  body {
+  /* body {
     overflow: hidden;
-  }
+  } */
 
   .burger {
     display: block;
