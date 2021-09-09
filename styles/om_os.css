@@ -2,6 +2,21 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+h2 {
+  margin-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+img {
+  padding: 1rem;
+}
 /*Kontaktformular start*/
 
 form label {
@@ -37,3 +52,20 @@ button {
   padding-top: 15vw;
 }
 /*Kontaktformular slut*/
+
+@media (min-width: 1000px) {
+  .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 1.5rem;
+  }
+
+  .section_1 {
+    grid-column: 2/3;
+  }
+
+  .section_2 {
+    grid-column: 2/3;
+  }
+}
