@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/mutual_styles.css" />
+    <link rel="stylesheet" href="styles/produkter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Detaljer</title>
+  </head>
+  <body id="detaljeSide">
+    <main>
+      <button>Tilbage</button>
+
+      <article>
+        <img src="" alt="" />
+        <p class="navn"></p>
+        <p class="farve"></p>
+        <p class="pris"></p>
+        <p class="beskrivelse"></p>
+      </article>
+    </main>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+      let ur;
+
+      const url = "https://kea2021-9221.restdb.io/rest/armbaandsure/";
+
+      const options = {
+        headers: {
+          "x-apikey": "6139fbde43cedb6d1f97eeee",
+        },
+      };
+
+      document.addEventListener("DOMContentLoaded", hentdata);
+
+      async function hentdata() {
+        const result = await fetch(url + id, options);
+        ur = await result.json();
+        console.log(ur);
+        visUr();
+      }
+
+      function visUr() {
+        document.querySelector("img").src = "images/" + ur.Billede + ".jpg";
+        document.querySelector(".navn").textContent = ur.Navn;
+        document.querySelector(".farve").textContent = ur.Farve;
+        document.querySelector(".pris").textContent = ur.Pris;
+        document.querySelector(".beskrivelse").textContent = ur.Beskrivelse;
+      }
+
+      document.querySelector("button").addEventListener("click", () => {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>

@@ -30,12 +30,12 @@ section img {
   flex-wrap: wrap;
 }
 
-nav button {
+/* nav button {
   background-color: darkgrey;
   border-radius: 5px;
   border: none;
   padding: 8px;
-}
+} */
 
 h1 {
   text-align: center;

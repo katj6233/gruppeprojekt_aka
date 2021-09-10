@@ -47,6 +47,10 @@ function visUre() {
       klon.querySelector(".navn").textContent = ur.Navn;
       klon.querySelector(".farve").textContent = ur.Farve;
       klon.querySelector(".pris").textContent = ur.Pris;
+      klon.querySelector("article").addEventListener("click", () => {
+        location.href = "produkter_detaljer.html?id=" + ur._id;
+      });
+
       container.appendChild(klon);
     }
   });
