@@ -199,13 +199,22 @@ nav {
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 750px) {
+  .nav_links {
+    width: 50%;
+  }
+
   .nav_links {
     width: 45%;
   }
-}
 
-@media (min-width: 900px) {
+  .logo img {
+    max-width: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 75%;
+  }
+
   .nav_links {
     width: 55%;
   }
@@ -223,18 +232,5 @@ nav {
 
   .find_os {
     padding-top: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .nav_links {
-    width: 50%;
-  }
-
-  .logo img {
-    max-width: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 75%;
   }
 }
