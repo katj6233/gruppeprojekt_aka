@@ -1,12 +1,15 @@
 img {
-  width: 80%;
+  width: 100%;
 }
 
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5px;
-  margin-inline: 6rem;
+}
+
+section img {
+  padding-inline: 2rem;
 }
 /* article {
   border: solid black 1px;
@@ -43,5 +46,11 @@ article p {
 }
 
 article img {
-  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  section {
+    margin-inline: 6rem;
+  }
 }
