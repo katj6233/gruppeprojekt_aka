@@ -5,12 +5,13 @@ img {
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 5px;
+  gap: 10px;
 }
 
 section img {
   padding-inline: 2rem;
 }
+
 /* article {
   border: solid black 1px;
   border-radius: 5px;
@@ -18,24 +19,27 @@ section img {
   margin: 1rem;
 } */
 
-.valgt {
+/* .valgt {
   background-color: red;
-}
+} */
 
 .produkter_knapper {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   overflow-x: auto;
   flex-wrap: wrap;
 }
+.produkter_knapper :hover {
+  scale: 1.1;
+}
 
-nav button {
+/* nav button {
   background-color: darkgrey;
   border-radius: 5px;
   border: none;
   padding: 8px;
-}
+} */
 
 h1 {
   text-align: center;
