@@ -36,7 +36,7 @@ button {
   padding: 9px 29px;
   text-decoration: none;
   border: none;
-  transition: all ease-in 10s;
+  transition: all ease-in 0.1s;
 }
 
 button:hover {
