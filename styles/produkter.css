@@ -1,19 +1,19 @@
 img {
-  width: 100%;
+  width: 80%;
 }
 
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5px;
+  margin-inline: 6rem;
 }
-
-article {
+/* article {
   border: solid black 1px;
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem;
-}
+} */
 
 .valgt {
   background-color: red;
@@ -32,4 +32,16 @@ nav button {
   border-radius: 5px;
   border: none;
   padding: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+article p {
+  text-align: center;
+}
+
+article img {
+  justify-content: center;
 }
