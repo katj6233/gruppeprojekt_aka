@@ -36,6 +36,11 @@ button {
   padding: 9px 29px;
   text-decoration: none;
   border: none;
+  transition: all ease-in 10s;
+}
+
+button:hover {
+  scale: 1.1;
 }
 
 /*  .......... footer ......... */
