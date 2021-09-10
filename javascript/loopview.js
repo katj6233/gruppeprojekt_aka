@@ -25,8 +25,8 @@ function start() {
 
 function filtrerUre() {
   filter = this.dataset.farve;
-  // document.querySelector(".valgt").classList.remove("valgt");
-  // this.classList.add("valgt");
+  document.querySelector(".valgt").classList.remove("valgt");
+  this.classList.add("valgt");
   visUre();
   header.textContent = this.textContent;
 }
