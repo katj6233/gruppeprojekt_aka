@@ -1,5 +1,7 @@
 h1 {
   text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
 }
 
 p {
@@ -14,7 +16,7 @@ h2 {
 img {
   padding: 2rem;
 }
-/*Kontaktformular start*/
+/*Kontaktformular start - taget fra Redesign*/
 
 form label {
   font-size: 14px;
@@ -28,16 +30,10 @@ form label {
 
 form {
   grid-column: 2/3;
-  padding: 1.5rem;
 }
 
-button {
-  margin-top: 1rem;
-  border: 0;
-  padding: 0.75rem;
-  font-weight: 700;
-  border-radius: 4px;
-  color: white;
+label {
+  font-family: "raleway", sans-serif;
 }
 
 .form_section article {
@@ -48,8 +44,12 @@ button {
   padding: 1rem;
   padding-top: 15vw;
 }
+button {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
 
-/*Kontaktformular slut*/
+/*Kontaktformular slut taget fra Redesign*/
 
 @media (min-width: 750px) {
   .section_wrapper {
@@ -66,6 +66,7 @@ button {
   .section_2 {
     grid-column: 2/3;
   }
+  /*Kontaktformular start - taget fra Redesign*/
   .form_section {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -77,5 +78,13 @@ button {
   }
   .col_left_1 {
     grid-column: 2/3;
+  }
+  /*Kontaktformular slut - taget fra Redesign*/
+
+  .col_right2 {
+    padding: 2rem;
+  }
+  .col_left2 {
+    padding: 2rem;
   }
 }
