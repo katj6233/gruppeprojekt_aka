@@ -13,7 +13,8 @@ h2 {
   margin: 2rem;
 }
 
-img {
+.img1,
+.img2 {
   padding: 2rem;
 }
 /*Kontaktformular start - taget fra Redesign*/
@@ -82,9 +83,9 @@ button {
   /*Kontaktformular slut - taget fra Redesign*/
 
   .col_right2 {
-    padding: 2rem;
+    padding: 4rem;
   }
   .col_left2 {
-    padding: 2rem;
+    padding: 4rem;
   }
 }
