@@ -16,11 +16,30 @@
     <title>Detaljer</title>
   </head>
   <body id="detaljeSide">
+    <nav>
+      <div class="logo">
+        <img id="logo_img" src="images/logo/logo.png" alt="logo" />
+      </div>
+      <ul class="nav_links">
+        <li>
+          <a href="produkter.html">Produkter</a>
+        </li>
+
+        <li>
+          <a href="om_os.html">Om os</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
     <main>
       <button id="back_knap">Tilbage</button>
 
       <article id="single">
-        <img src="" alt="" />
+        <img id="product_img" src="" alt="" />
         <section id="section_wrapper">
           <h2></h2>
           <p class="pris"></p>
@@ -66,7 +85,8 @@
       }
 
       function visUr() {
-        document.querySelector("img").src = "images/" + ur.Billede + ".jpg";
+        document.querySelector("#product_img").src =
+          "images/" + ur.Billede + ".jpg";
         document.querySelector("h2").textContent = ur.Navn;
         document.querySelector(".farve").textContent = ur.Farve;
         document.querySelector(".pris").textContent = ur.Pris + ",-";
@@ -100,5 +120,6 @@
         </div>
       </div>
     </footer>
+    <script src="javascript/generelt.js"></script>
   </body>
 </html>
