@@ -4,12 +4,17 @@ const links = document.querySelector(".nav_links");
 
 const burger = document.querySelector(".burger");
 
-const li = document.querySelectorAll("li");
+const logo = document.querySelector("#logo_img");
 
 function start() {
   burger.addEventListener("click", toggle);
   burger.addEventListener("mouseover", over);
   burger.addEventListener("mouseout", done);
+  logo.addEventListener("click", forside);
+}
+function forside() {
+  console.log("forside");
+  window.location.replace("index.html");
 }
 
 function toggle() {

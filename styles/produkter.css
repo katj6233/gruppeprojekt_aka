@@ -34,6 +34,11 @@
   margin-top: 2rem;
 }
 
+#back_knap {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
 /*  .......... singleView slut......... */
 
 img {
@@ -50,12 +55,10 @@ section img {
   padding-inline: 2rem;
 }
 
-/* article {
-  border: solid black 1px;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 1rem;
-} */
+article {
+  cursor: pointer;
+}
+
 .valgt {
   scale: 1.1;
 }
