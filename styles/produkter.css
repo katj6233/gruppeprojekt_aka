@@ -65,6 +65,9 @@ article {
 
 .valgt {
   scale: 1.1;
+  background-color: #fff;
+  color: black;
+  border: solid 1px black;
 }
 
 .produkter_knapper {
