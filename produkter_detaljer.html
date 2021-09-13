@@ -19,13 +19,20 @@
     <main>
       <button>Tilbage</button>
 
-      <article>
+      <article id="single">
         <img src="" alt="" />
-        <p class="navn"></p>
-        <p class="farve"></p>
-        <p class="pris"></p>
-        <p class="beskrivelse"></p>
+        <section id="section_wrapper">
+          <h2></h2>
+          <p class="pris"></p>
+          <p class="farve"></p>
+          <p class="beskrivelse"></p>
+          <button>Tilføj til kurv</button>
+        </section>
       </article>
+
+      <h2 id="h2_lignende">Lignende produkter</h2>
+
+      <section id="lignende_produkter"></section>
     </main>
 
     <script>
@@ -52,9 +59,9 @@
 
       function visUr() {
         document.querySelector("img").src = "images/" + ur.Billede + ".jpg";
-        document.querySelector(".navn").textContent = ur.Navn;
+        document.querySelector("h2").textContent = ur.Navn;
         document.querySelector(".farve").textContent = ur.Farve;
-        document.querySelector(".pris").textContent = ur.Pris;
+        document.querySelector(".pris").textContent = ur.Pris + ",-";
         document.querySelector(".beskrivelse").textContent = ur.Beskrivelse;
       }
 

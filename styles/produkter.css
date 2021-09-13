@@ -1,3 +1,41 @@
+/*  .......... singleView ......... */
+
+#single h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+#single p {
+  text-align: left;
+}
+#single img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#single .pris {
+  margin-bottom: 1rem;
+}
+#single .farve {
+  margin-bottom: 1rem;
+}
+#single .beskrivelse {
+  margin-bottom: 1rem;
+}
+
+#section_wrapper {
+  display: block;
+}
+
+#lignende_produkter h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*  .......... singleView slut......... */
+
 img {
   width: 100%;
 }
@@ -44,6 +82,11 @@ h1 {
   text-align: center;
 }
 
+#h2_lignende {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 article p {
   text-align: center;
 }
@@ -55,5 +98,22 @@ article img {
 @media (min-width: 750px) {
   section {
     margin-inline: 6rem;
+  }
+
+  #single {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #single #section_wrapper {
+    grid-column: 2;
+  }
+
+  #single img {
+    max-width: 100%;
+  }
+
+  #section_wrapper {
+    padding-top: 3rem;
   }
 }
