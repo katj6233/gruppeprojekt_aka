@@ -6,15 +6,23 @@ const burger = document.querySelector(".burger");
 
 const logo = document.querySelector("#logo_img");
 
+const om_knap = document.querySelector("#om_knap");
+
 function start() {
   burger.addEventListener("click", toggle);
   burger.addEventListener("mouseover", over);
   burger.addEventListener("mouseout", done);
   logo.addEventListener("click", forside);
+  om_knap.addEventListener("click", omSide);
 }
 function forside() {
   console.log("forside");
   window.location.replace("index.html");
+}
+
+function omSide() {
+  console.log("omSide");
+  window.location.replace("om_os.html");
 }
 
 function toggle() {
