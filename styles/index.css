@@ -10,6 +10,7 @@ h1 {
 
 p {
   text-align: center;
+  margin-inline: 2rem;
 }
 
 .knap_midte {
@@ -65,7 +66,6 @@ button {
 }
 
 #section_kvalitet h2 {
-  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -78,16 +78,20 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-block: 5rem;
   }
 
   #section_kvalitet img {
     grid-column: 1;
     grid-row: 1;
+    margin-left: 4rem;
   }
 
   #section_kvalitet #section_wrapper {
     grid-column: 2;
-    padding-top: 2rem;
+    place-self: center center;
+    margin-inline: 4rem;
+    margin-left: 7rem;
   }
 
   #section_kvalitet #section_wrapper h2 {
@@ -117,7 +121,7 @@ button {
   }
 
   .btn_splash {
-    margin-top: 16rem;
+    margin-top: 20rem;
   }
 
   .splash {
