@@ -46,9 +46,7 @@
 
 /*  .......... singleView slut......... */
 
-img {
-  width: 100%;
-}
+/*  .......... grid af produkter ......... */
 
 section {
   display: grid;
@@ -72,6 +70,10 @@ article {
   border: solid 1px black;
 }
 
+/*  .......... grid af produkter slut ......... */
+
+/*  .......... filtreringsknapper ......... */
+
 .produkter_knapper {
   display: flex;
   justify-content: center;
@@ -84,6 +86,10 @@ article {
 .produkter_knapper :hover {
   scale: 1.1;
 }
+
+/*  .......... filtreringsknapper slut ......... */
+
+/*  .......... breadcrums sti ......... */
 
 .breadcrumb {
   margin-left: 2rem;
@@ -114,22 +120,21 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-/* nav button {
-  background-color: darkgrey;
-  border-radius: 5px;
-  border: none;
-  padding: 8px;
-} */
+/*  .......... breadcrums slut ......... */
+
+/*  .......... fonte ......... */
 
 h1 {
   text-align: center;
 }
-
 #h2_lignende {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+/*  .......... fonte slut ......... */
+
+/*  .......... template p og img ......... */
 
 article p {
   text-align: center;
@@ -138,6 +143,8 @@ article p {
 article img {
   text-align: center;
 }
+
+/*  .......... template p og img slut ......... */
 
 @media (min-width: 750px) {
   section {

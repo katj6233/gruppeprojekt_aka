@@ -16,6 +16,7 @@
     <title>Produkter</title>
   </head>
   <body>
+    <!-- menu som vises på desktop -->
     <nav>
       <div class="logo">
         <img id="logo_img" src="images/logo/DynamiskWeb_logo.svg" alt="logo" />
@@ -29,6 +30,7 @@
           <a href="om_os.html">Om os</a>
         </li>
       </ul>
+      <!-- burger menu som ses i mobil -->
       <div class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -37,6 +39,7 @@
     </nav>
 
     <h1>Alle</h1>
+    <!-- filteringsknapper med data attributter -->
     <nav class="produkter_knapper">
       <button data-farve="alle" class="valgt">Alle</button>
       <button data-farve="Guld">Guld</button>
@@ -45,7 +48,9 @@
       <button data-farve="Bordeaux">Bordeaux</button>
     </nav>
     <section></section>
+    <!-- tom container til alle ure -->
     <template>
+      <!-- indholdet af <template> tag er html skabelon for de enkelte ure -->
       <article>
         <img src="" alt="" />
         <p class="navn"></p>
@@ -56,6 +61,7 @@
     <script src="javascript/loopview.js"></script>
     <script src="javascript/generelt.js"></script>
 
+    <!-- footer -->
     <footer>
       <div class="adresse">
         <p><b>Adresse</b></p>
