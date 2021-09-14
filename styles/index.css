@@ -1,3 +1,4 @@
+/******* Fonte ********/
 h2 {
   text-align: center;
 }
@@ -11,10 +12,6 @@ h1 {
 p {
   text-align: center;
   margin-inline: 2rem;
-}
-
-.knap_midte {
-  text-align: center;
 }
 
 /************ forside mobil **********/
@@ -39,23 +36,23 @@ h1 {
 
 .btn_splash {
   text-align: center;
+  margin-top: 2rem;
 }
+
+/************ knapper ***********/
 
 button a {
-  background-color: #072040;
-  cursor: pointer;
   color: #ffffff;
-  font-family: "raleway", sans-serif;
-  font-size: 18px;
   text-decoration: none;
-  border: none;
-  transition: all ease-in 0.1s;
 }
 
-button {
+.knap_midte {
+  text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+
+/************ forside sektion med billede og tekst (padding og margin) ***********/
 
 #section_kvalitet {
   margin-top: 2rem;
@@ -69,11 +66,10 @@ button {
   padding-bottom: 2rem;
 }
 
-#section_wrapper img {
-  padding-bottom: 2rem;
-}
+/************ Desktop ***********/
 
 @media (min-width: 1000px) {
+  /************ forside sektion under billede ***********/
   #section_kvalitet {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -81,19 +77,20 @@ button {
     margin-block: 5rem;
   }
 
+  /************ billede i sektionen ***********/
   #section_kvalitet img {
     grid-column: 1;
     grid-row: 1;
     margin-left: 4rem;
   }
-
+  /************ tekst i sektionen ***********/
   #section_kvalitet #section_wrapper {
     grid-column: 2;
     place-self: center center;
     margin-inline: 4rem;
     margin-left: 7rem;
   }
-
+  /************ overskrift i sektionen ***********/
   #section_kvalitet #section_wrapper h2 {
     padding-bottom: 1rem;
   }
