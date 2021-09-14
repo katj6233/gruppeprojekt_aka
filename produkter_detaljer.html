@@ -57,12 +57,13 @@
         </section>
       </article>
 
-      <h2 id="h2_lignende">Andre kunder har købt:</h2>
+      <h2 id="h2_lignende">Andre kunder har købt</h2>
 
       <section id="lignende_produkter"></section>
       <template>
         <article>
           <img src="" alt="" />
+          <h2></h2>
           <p class="navn"></p>
           <p class="farve"></p>
           <p class="pris"></p>
@@ -75,9 +76,9 @@
       const id = urlParams.get("id");
       let ur;
 
-      const url = "https://kea2021-9221.restdb.io/rest/armbaandsure/";
+      const singleUrl = "https://kea2021-9221.restdb.io/rest/armbaandsure/";
 
-      const options = {
+      const singleOptions = {
         headers: {
           "x-apikey": "6139fbde43cedb6d1f97eeee",
         },
@@ -86,7 +87,7 @@
       document.addEventListener("DOMContentLoaded", hentdata);
 
       async function hentdata() {
-        const result = await fetch(url + id, options);
+        const result = await fetch(singleUrl + id, singleOptions);
         ur = await result.json();
         console.log(ur);
         visUr();

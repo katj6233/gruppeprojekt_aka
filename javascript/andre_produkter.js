@@ -1,6 +1,8 @@
 let alleUre;
 let container;
 let temp;
+let antal = 4;
+let tæller = 0;
 
 const url = "https://kea2021-9221.restdb.io/rest/armbaandsure";
 
@@ -29,11 +31,16 @@ async function hentdata() {
 function visUre() {
   container.textContent = "";
   alleUre.forEach((ur) => {
-    let klon = temp.cloneNode(true).content;
-    klon.querySelector("h2").textContent = ur.Navn;
-    klon.querySelector(".farve").textContent = ur.Farve;
-    klon.querySelector(".pris").textContent = ur.Pris + ",-";
-    klon.querySelector("img").src = "images/" + ur.Billede + ".jpg";
-    container.appendChild(klon);
+    if (ur._id != id) {
+      if (tæller < antal) {
+        let klon = temp.cloneNode(true).content;
+        klon.querySelector("h2").textContent = ur.Navn;
+        klon.querySelector(".farve").textContent = ur.Farve;
+        klon.querySelector(".pris").textContent = ur.Pris + ",-";
+        klon.querySelector("img").src = "images/" + ur.Billede + ".jpg";
+        container.appendChild(klon);
+        tæller++;
+      }
+    }
   });
 }

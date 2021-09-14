@@ -1,4 +1,8 @@
+//Lytter efter om alt DOM indhold er loaded ind.
+
 window.addEventListener("DOMContentLoaded", start);
+
+//Definerer
 
 const links = document.querySelector(".nav_links");
 

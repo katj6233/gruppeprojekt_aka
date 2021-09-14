@@ -88,13 +88,15 @@ article {
 .breadcrumb {
   margin-left: 2rem;
   padding: 10px 16px;
+  text-align: center;
 }
 
 .breadcrumb li {
   list-style: none;
   text-decoration: none;
   display: inline;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-family: "raleway";
 }
 
 ul.breadcrumb li a {
@@ -126,6 +128,7 @@ h1 {
 #h2_lignende {
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 article p {
@@ -160,5 +163,8 @@ article img {
 
   .breadcrumb li {
     font-size: 1rem;
+  }
+  .breadcrumb {
+    text-align: left;
   }
 }
