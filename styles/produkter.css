@@ -147,6 +147,7 @@ article img {
 /*  .......... template p og img slut ......... */
 
 @media (min-width: 750px) {
+  /*  .......... singleView ......... */
   section {
     margin-inline: 6rem;
   }
@@ -168,10 +169,13 @@ article img {
     padding-top: 3rem;
   }
 
+  /*  .......... breadcrums  ......... */
   .breadcrumb li {
     font-size: 1rem;
   }
   .breadcrumb {
     text-align: left;
   }
+  /*  .......... breadcrums slut  ......... */
+  /*  .......... singleView slut ......... */
 }
