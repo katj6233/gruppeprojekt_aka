@@ -85,6 +85,33 @@ article {
   scale: 1.1;
 }
 
+.breadcrumb {
+  margin-left: 2rem;
+  padding: 10px 16px;
+}
+
+.breadcrumb li {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  font-size: 0.7rem;
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "\2192";
+}
+
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
 /* nav button {
   background-color: darkgrey;
   border-radius: 5px;
@@ -129,5 +156,9 @@ article img {
 
   #section_wrapper {
     padding-top: 3rem;
+  }
+
+  .breadcrumb li {
+    font-size: 1rem;
   }
 }
