@@ -1,8 +1,13 @@
+// Der defineres en række variabler
+
 let alleUre;
 let container;
 let temp;
 let antal = 4;
 let tæller = 0;
+
+// Url'en samt x-apikey defineres, hvilket gør os i stand i at hente den pågældende
+// data fra resteb
 
 const url = "https://kea2021-9221.restdb.io/rest/armbaandsure";
 
@@ -12,7 +17,11 @@ const options = {
   },
 };
 
+// Lytter efter om alt DOM indhold er loaded ind
+
 document.addEventListener("DOMContentLoaded", start);
+
+// container og temp defineres
 
 function start() {
   container = document.querySelector("#lignende_produkter");
@@ -21,12 +30,19 @@ function start() {
   hentdata();
 }
 
+// Der bliver hentet data via j.son Samtidig skrives arrayet (alleUre) ud i konsollen
+
 async function hentdata() {
   const result = await fetch(url, options);
   alleUre = await result.json();
   console.log(alleUre);
   visUre();
 }
+
+// Der laves et forEach loop for hvert ur, som bliver klonet.
+// Samtidig laves der nogle if sætninger der begrænser antallet af
+// af ure der bliver hentet ind samt at det ur der er klikket på ikke
+// dukker op.
 
 function visUre() {
   container.textContent = "";
@@ -37,7 +53,7 @@ function visUre() {
         klon.querySelector("h2").textContent = ur.Navn;
         klon.querySelector(".farve").textContent = ur.Farve;
         klon.querySelector(".pris").textContent = ur.Pris + ",-";
-        klon.querySelector("img").src = "images/" + ur.Billede + ".jpg";
+        klon.querySelector("img").src = "images/" + ur.Billede + ".webp";
         container.appendChild(klon);
         tæller++;
       }
