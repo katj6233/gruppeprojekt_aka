@@ -1,8 +1,11 @@
+/*  .......... Generelle regler ......... */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/*  .......... Overflow: Gør så det ikke er muligt at scrolle vandret ......... */
 
 body {
   overflow-x: hidden;
@@ -12,6 +15,8 @@ img {
   width: 100%;
   height: auto;
 }
+
+/*  .......... Fonte / tekst ......... */
 
 p {
   line-height: 1.5rem;
@@ -25,6 +30,71 @@ h2 {
 h1 {
   font-family: "Lato", sans-serif;
 }
+
+/*  .......... logo ......... */
+
+.logo {
+  transition: ease-in 0.1s;
+  cursor: pointer;
+}
+
+.logo img {
+  max-width: 50%;
+}
+
+/*  .......... Nav ......... */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  text-transform: uppercase;
+}
+
+.nav_links li {
+  list-style: none;
+  transition: all ease-in 0.1s;
+}
+
+.nav_links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  font-family: "raleway", sans-serif;
+}
+
+/*  .......... nav hover ......... */
+
+.nav_links li:hover {
+  scale: 1.1;
+}
+
+/*  .......... Burgermenu ikon......... */
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+/*  .......... knapper ......... */
 
 button {
   background-color: #072040;
@@ -74,74 +144,10 @@ footer {
   padding-top: 2rem;
 }
 
-/*  .......... Nav ......... */
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-}
-
-.nav_links {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-  text-transform: uppercase;
-}
-
-.nav_links li {
-  list-style: none;
-  transition: all ease-in 0.1s;
-}
-
-.nav_links a {
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  color: black;
-  font-family: "raleway", sans-serif;
-}
-
-/*  .......... nav hover ......... */
-
-.nav_links li:hover {
-  scale: 1.1;
-}
-
-/*  .......... logo ......... */
-
-.logo {
-  transition: ease-in 0.1s;
-  cursor: pointer;
-}
-
-.logo img {
-  max-width: 50%;
-}
-
-/*  .......... Burger ......... */
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background-color: black;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.burger {
-  cursor: pointer;
-  display: none;
-}
-
-/*  .......... Baggrund ......... */
-
 /*  .......... @Media ......... */
 
 @media (max-width: 750px) {
+  /*  .......... Mobil ......... */
   .nav_links {
     position: absolute;
     right: 0px;
@@ -156,9 +162,8 @@ nav {
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
   }
 
-  /* body {
-    overflow: hidden;
-  } */
+  /*  .......... Burgermenu ......... */
+  /*  ...Inspiration: https://www.youtube.com/watch?v=gXkqy0b4M5g ......... */
 
   .burger {
     display: block;
@@ -166,16 +171,7 @@ nav {
     margin-left: 10px;
   }
 
-  .logo {
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-
-  .social_loger img {
-    max-width: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
+  /*  .......... Burgermenu toggle former sig om X......... */
 
   .nav_toggle {
     transform: translateX(0%);
@@ -191,6 +187,8 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
+  /*  ..... Burgermenu hover effekt (linerne bevæger sig fra hinanden) ......... */
+
   .hover .line1 {
     transform: translateY(-3px);
     transition: all 0.3s;
@@ -203,9 +201,30 @@ nav {
     transform: translateY(3px);
     transition: all 0.3s;
   }
+
+  /*  .......... logo......... */
+
+  .logo {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  /*  .......... Footer......... */
+
+  .social_loger img {
+    max-width: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /*  .......... Mobil slut ......... */
 }
 
 @media (min-width: 750px) {
+  /*  .......... Desktop ......... */
+
+  /*  .......... Nav ......... */
+
   .nav_links {
     width: 50%;
   }
@@ -214,6 +233,12 @@ nav {
     width: 45%;
   }
 
+  .nav_links {
+    width: 55%;
+  }
+
+  /*  .......... Nav logo ......... */
+
   .logo img {
     max-width: 2rem;
     margin-top: 1rem;
@@ -221,9 +246,9 @@ nav {
     max-width: 75%;
   }
 
-  .nav_links {
-    width: 55%;
-  }
+  /*  .......... Footer ......... */
+
+  /*  .......... Footer bliver indelt i 3 kolonner på desktop ......... */
 
   footer {
     display: grid;
