@@ -43,7 +43,7 @@ function visUre() {
   alleUre.forEach((ur) => {
     if (filter == ur.Farve || filter == "alle") {
       let klon = temp.cloneNode(true).content;
-      klon.querySelector("img").src = "images/" + ur.Billede + ".jpg";
+      klon.querySelector("img").src = "images/" + ur.Billede + ".webp";
       klon.querySelector(".navn").textContent = ur.Navn;
       klon.querySelector(".farve").textContent = ur.Farve;
       klon.querySelector(".pris").textContent = ur.Pris + ",-";
