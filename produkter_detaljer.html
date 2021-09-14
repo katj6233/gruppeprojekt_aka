@@ -18,6 +18,7 @@
   </head>
   <body id="detaljeSide">
     <nav>
+      <!-- menu som vises på desktop -->
       <div class="logo">
         <img id="logo_img" src="images/logo/DynamiskWeb_logo.svg" alt="logo" />
       </div>
@@ -30,6 +31,7 @@
           <a href="om_os.html">Om os</a>
         </li>
       </ul>
+      <!-- burger menu som ses i mobil -->
       <div class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -37,6 +39,7 @@
       </div>
     </nav>
 
+    <!-- breadcrums på singleview -->
     <ul class="breadcrumb">
       <li><a href="index.html">Forside</a></li>
       <li><a href="produkter.html">Produkter</a></li>
@@ -46,6 +49,7 @@
     <main>
       <!-- <button id="back_knap">Tilbage</button> -->
 
+      <!-- indholdet article tag er html skabelon for det enkelte ur -->
       <article id="single">
         <img id="product_img" src="" alt="" />
         <section id="section_wrapper">
@@ -59,6 +63,7 @@
 
       <h2 id="h2_lignende">Andre kunder har købt</h2>
 
+      <!-- indholdet af <template> tag er html skabelon for flere ure -->
       <section id="lignende_produkter"></section>
       <template>
         <article>
@@ -70,6 +75,31 @@
         </article>
       </template>
     </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="adresse">
+        <p><b>Adresse</b></p>
+        <p>Guldbergsgade 29N</p>
+        <p>2200 København N</p>
+        <p>+45 46 46 00 00</p>
+      </div>
+      <div class="om_os">
+        <p><b>Åbningstider</b></p>
+        <p>Mandag - Fredag</p>
+        <p>10-18</p>
+        <br />
+        <p>Lørdag - Søndag</p>
+        <p>10-15</p>
+      </div>
+      <div class="find_os">
+        <p><b>Find os her</b></p>
+        <div class="social_loger">
+          <img src="images/logo/f_logo_RGB-Blue_100.png" alt="facebook logo" />
+          <img src="images/logo/insta_logo.png" alt="insta logo" />
+        </div>
+      </div>
+    </footer>
 
     <script>
       // Der defineres en række variabler. Fremfor alleUre defineres
@@ -115,29 +145,6 @@
         document.querySelector(".beskrivelse").textContent = ur.Beskrivelse;
       }
     </script>
-    <footer>
-      <div class="adresse">
-        <p><b>Adresse</b></p>
-        <p>Guldbergsgade 29N</p>
-        <p>2200 København N</p>
-        <p>+45 46 46 00 00</p>
-      </div>
-      <div class="om_os">
-        <p><b>Åbningstider</b></p>
-        <p>Mandag - Fredag</p>
-        <p>10-18</p>
-        <br />
-        <p>Lørdag - Søndag</p>
-        <p>10-15</p>
-      </div>
-      <div class="find_os">
-        <p><b>Find os her</b></p>
-        <div class="social_loger">
-          <img src="images/logo/f_logo_RGB-Blue_100.png" alt="facebook logo" />
-          <img src="images/logo/insta_logo.png" alt="insta logo" />
-        </div>
-      </div>
-    </footer>
     <script src="javascript/generelt.js"></script>
     <script src="javascript/andre_produkter.js"></script>
   </body>
