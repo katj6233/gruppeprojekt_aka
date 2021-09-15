@@ -163,7 +163,7 @@ hidden {
 
 /*  .......... Styling af popUp ......... */
 
-#popup_om {
+/* #popup_om {
   width: 300vh;
   height: 100vh;
   background-color: rgba(3, 43, 82, 0.3);
@@ -188,7 +188,8 @@ hidden {
 #popup_om_content #luk_om {
   margin-left: 2rem;
   margin-bottom: 0;
-}
+} */
+
 /*  ....... Styling af popUp slut ......... */
 
 /*  .......... template p og img slut ......... */
