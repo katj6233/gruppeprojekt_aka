@@ -12,6 +12,8 @@ const logo = document.querySelector("#logo_img");
 
 const knap_om = document.querySelector("#om_knap");
 
+const udvalg_knap = document.querySelector("#udvalg_btn");
+
 // Til popUp omSide
 
 // const indsend_knap = document.querySelector("#indsend");
@@ -28,8 +30,8 @@ function start() {
   burger.addEventListener("mouseover", over);
   burger.addEventListener("mouseout", done);
   logo.addEventListener("click", forside);
-
   knap_om.addEventListener("click", omSide);
+  udvalg_knap.addEventListener("click", produktSide);
 
   // indsend.addEventListener("click", popUpOm);
 }
@@ -70,4 +72,9 @@ function over() {
 function done() {
   console.log("done");
   burger.classList.remove("hover");
+}
+
+function produktSide() {
+  console.log("produktSide");
+  window.location.replace("produkter.html");
 }
