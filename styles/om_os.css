@@ -57,6 +57,42 @@ button {
 }
 
 /*Kontaktformular slut taget fra Redesign*/
+/* Popup efter indsendelse af form */
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#popup_om {
+  width: 300vh;
+  height: 100vh;
+  background-color: rgba(3, 43, 82, 0.3);
+  position: fixed;
+  top: 0;
+}
+
+#popup_om_content {
+  background-color: white;
+  width: 45vh;
+  line-height: 1.5rem;
+  margin-left: 2rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 0rem;
+}
+#popup_om_content h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#popup_om_content #luk_om {
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
 
 @media (min-width: 750px) {
   .section_wrapper {

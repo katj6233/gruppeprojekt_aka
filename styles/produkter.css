@@ -63,6 +63,13 @@ article {
   cursor: pointer;
 }
 
+article .navn {
+  font-weight: bold;
+}
+article .pris {
+  font-style: italic;
+}
+
 .valgt {
   scale: 1.1;
   background-color: #fff;
@@ -143,6 +150,46 @@ article p {
 article img {
   text-align: center;
 }
+
+/*  .......... klasser til popUp ......... */
+
+hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/*  .......... Styling af popUp ......... */
+
+#popup_om {
+  width: 300vh;
+  height: 100vh;
+  background-color: rgba(3, 43, 82, 0.3);
+  position: fixed;
+  top: 0;
+}
+
+#popup_om_content {
+  background-color: white;
+  width: 45vh;
+  line-height: 1.5rem;
+  margin-left: 2rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 0rem;
+}
+#popup_om_content h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#popup_om_content #luk_om {
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
+/*  ....... Styling af popUp slut ......... */
 
 /*  .......... template p og img slut ......... */
 
