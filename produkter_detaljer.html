@@ -102,9 +102,14 @@
     </footer>
 
     <script>
+      // Der defineres en række variabler. Fremfor alleUre defineres
+      // der nu kun en variabel for ur, i det at det er singleview
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       let ur;
+
+      // Url'en samt x-apikey defineres, hvilket gør os i stand i at hente den pågældende
+      // data fra resteb. Der er tilføjet / til url'en så vi henter et bestemt ur
 
       const singleUrl = "https://kea2021-9221.restdb.io/rest/armbaandsure/";
 
@@ -114,7 +119,12 @@
         },
       };
 
+      // Lytter efter om alt DOM indhold er loaded ind
+
       document.addEventListener("DOMContentLoaded", hentdata);
+
+      // Der bliver hentet data via j.son Samtidig skrives arrayet (ur) ud i konsollen
+      // I modsætning til loopview, sker dette kun for et ur.
 
       async function hentdata() {
         const result = await fetch(singleUrl + id, singleOptions);
@@ -122,6 +132,9 @@
         console.log(ur);
         visUr();
       }
+
+      // Ved visUr indsættes data. Da der kun er tale om et ur
+      // bliver indholdet ikke klonet.
 
       function visUr() {
         document.querySelector("#product_img").src =
@@ -131,10 +144,6 @@
         document.querySelector(".pris").textContent = ur.Pris + ",-";
         document.querySelector(".beskrivelse").textContent = ur.Beskrivelse;
       }
-
-      document.querySelector("button").addEventListener("click", () => {
-        window.history.back();
-      });
     </script>
     <script src="javascript/generelt.js"></script>
     <script src="javascript/andre_produkter.js"></script>
