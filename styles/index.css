@@ -104,42 +104,36 @@ button a {
     padding-bottom: 1rem;
   }
 
-  /******* Splashbillede forside med H1 og knap *********/
+  /******* Splashbillede forside med H1, H3 og knap *********/
 
   h1 {
     color: #fff;
     font-size: 4rem;
     margin-top: 0;
   }
-
   h3 {
     color: #fff;
     font-size: 1.5rem;
     font-family: "Lato", sans-serif;
     margin-top: 12rem;
   }
-
   .baggrund {
     display: grid;
   }
-
   .splash,
   h1,
   h3,
   .btn_splash {
     grid-area: 1/1;
   }
-
   h1,
   h3,
   .btn_splash {
     place-self: center center;
   }
-
   .btn_splash {
     margin-top: 24rem;
   }
-
   .splash {
     object-fit: cover;
     width: 100%;
