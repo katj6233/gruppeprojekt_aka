@@ -33,8 +33,10 @@ function toggle() {
   // Ligeledes hvis klassen ikke er på, så fjernes eventet og der kan ikke hovers
   if (burger.classList.contains("toggle")) {
     burger.addEventListener("mouseover", over);
+    document.body.style.overflow = "auto";
   } else {
     burger.removeEventListener("mouseover", over);
+    document.body.style.overflow = "hidden";
   }
   // Både nav links samt burgerikonet får tildelt en klasse når der klikkes
   // på dem, og klassen fjernes ligeledes når der klikkes igen

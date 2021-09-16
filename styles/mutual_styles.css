@@ -53,7 +53,7 @@ nav {
 
 .nav_links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 30%;
   text-transform: uppercase;
 }
@@ -67,7 +67,7 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   font-family: "raleway", sans-serif;
 }
@@ -152,14 +152,18 @@ footer {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
-    background-color: #fff;
+    top: 8.5vh;
+    background-color: #072040;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     align-items: center;
     transform: translateX(100%);
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+  }
+
+  .nav_links li a {
+    color: #ffff;
   }
 
   /*  .......... Burgermenu ......... */
