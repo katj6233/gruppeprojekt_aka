@@ -10,18 +10,6 @@ const burger = document.querySelector(".burger");
 
 const logo = document.querySelector("#logo_img");
 
-const knap_om = document.querySelector("#om_knap");
-
-const udvalg_knap = document.querySelector("#udvalg_btn");
-
-// Til popUp omSide
-
-// const indsend_knap = document.querySelector("#indsend");
-
-// const popUp_om = document.querySelector("#popup_om");
-
-// const indsend = document.querySelector("#indsend");
-
 // Ved den første funktion lyttes der efter henholdsvis click og hover på en række
 // elementer.
 
@@ -30,20 +18,11 @@ function start() {
   burger.addEventListener("mouseover", over);
   burger.addEventListener("mouseout", done);
   logo.addEventListener("click", forside);
-  knap_om.addEventListener("click", omSide);
-  udvalg_knap.addEventListener("click", produktSide);
-
-  // indsend.addEventListener("click", popUpOm);
 }
 // Ved click på logo navigeres der til forside
 function forside() {
   console.log("forside");
   window.location.replace("index.html");
-}
-// Ved click på om os knap navigeres der til om os siden
-function omSide() {
-  console.log("omSide");
-  window.location.replace("om_os.html");
 }
 
 function toggle() {
@@ -63,18 +42,14 @@ function toggle() {
   burger.classList.toggle("toggle");
 }
 
-// Disse funktioner tilføjer og fjerner hover klassen, og styes
+// Disse funktioner tilføjer og fjerner hover klassen, og styres
 // af if-sætningerne i toogle funktionen.
 function over() {
   console.log("over");
   burger.classList.add("hover");
 }
+
 function done() {
   console.log("done");
   burger.classList.remove("hover");
-}
-
-function produktSide() {
-  console.log("produktSide");
-  window.location.replace("produkter.html");
 }

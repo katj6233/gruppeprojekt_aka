@@ -78,6 +78,7 @@ button {
 #popup_om_content {
   background-color: white;
   width: 45vh;
+  height: 25vh;
   line-height: 1.5rem;
   margin-left: 2rem;
   padding-bottom: 1.5rem;

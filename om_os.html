@@ -131,17 +131,17 @@
 
       <!-- Popup vindue efter indsendelse af form-->
 
-      <!-- <div id="popup_om">
+      <div id="popup_om">
         <div id="popup_om_content">
           <button id="luk_om">X</button>
           <h2>
             Mange tak for din henvendelse. <br />
             Vi vender tilbage til dig så hurtigt som muligt
-          </h2> 
-
+          </h2>
         </div>
-      </div> -->
+      </div>
     </main>
+
     <footer>
       <div class="adresse">
         <p><b>Adresse</b></p>
@@ -165,6 +165,38 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", start);
+
+      // Til popUp omSide
+
+      const popup_omside = document.querySelector("#popup_om");
+
+      const luk_knap = document.querySelector("#luk_om");
+
+      const indsend_knap = document.querySelector("#indsend");
+
+      function start() {
+        // Bruges til popUp på omside
+
+        indsend_knap.addEventListener("click", popUpOm);
+
+        luk_knap.addEventListener("click", lukPop);
+
+        popup_omside.classList.add("hidden");
+      }
+
+      // PopUp omSide funktioner
+
+      function lukPop() {
+        popup_omside.classList.toggle("hidden");
+      }
+
+      function popUpOm() {
+        popup_omside.classList.toggle("hidden");
+      }
+    </script>
     <script src="javascript/generelt.js"></script>
   </body>
 </html>

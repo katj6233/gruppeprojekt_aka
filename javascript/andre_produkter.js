@@ -1,8 +1,10 @@
-// Der defineres en række variabler
+// Der defineres en række variabler. Blandt andet tæller og antal
+// der bruges til at skabe "andre kunder har købt" sektionen.
 
 let alleUre;
 let container;
 let temp;
+
 let antal = 4;
 let tæller = 0;
 
@@ -41,7 +43,7 @@ async function hentdata() {
 
 // Der laves et forEach loop for hvert ur, som bliver klonet.
 // Samtidig laves der nogle if sætninger der begrænser antallet af
-// af ure der bliver hentet ind samt at det ur der er klikket på ikke
+// af ure der bliver hentet ind, samt at det ur der er klikket på ikke
 // dukker op.
 
 function visUre() {

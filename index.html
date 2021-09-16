@@ -96,6 +96,30 @@
         </div>
       </div>
     </footer>
+    <script>
+      window.addEventListener("DOMContentLoaded", start);
+
+      const knap_om = document.querySelector("#om_knap");
+      const udvalg_knap = document.querySelector("#udvalg_btn");
+
+      //Sender videre til produkt og om side:
+
+      function start() {
+        knap_om.addEventListener("click", omSide);
+        udvalg_knap.addEventListener("click", produktSide);
+      }
+
+      // Ved click på om os knap navigeres der til om_os siden
+      function omSide() {
+        console.log("omSide");
+        window.location.replace("om_os.html");
+      }
+      // Ved click på om os knap navigeres der til produktsiden
+      function produktSide() {
+        console.log("produktSide");
+        window.location.replace("produkter.html");
+      }
+    </script>
     <script src="javascript/generelt.js"></script>
   </body>
 </html>
