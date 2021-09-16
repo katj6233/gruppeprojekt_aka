@@ -24,17 +24,21 @@ function forside() {
   console.log("forside");
   window.location.replace("index.html");
 }
-
+// Funktionen der styrer burgermenuen
 function toggle() {
   // Der undersøges om burgermenuen indeholder klassen toogle
   console.log(burger.classList.contains("toggle"));
 
   // Såfremt klassen toogle er på lyttes der efter en hover på burgermenuen
   // Ligeledes hvis klassen ikke er på, så fjernes eventet og der kan ikke hovers
+
   if (burger.classList.contains("toggle")) {
+    // Når klassen er toggelt er overflow sat til auto, så man kan scrolle.
     burger.addEventListener("mouseover", over);
     document.body.style.overflow = "auto";
   } else {
+    // Når menuen ikke har toggle klassen på (er åben), sættes overflow = hidden, dette gør
+    // at der ikke kan scrolles.
     burger.removeEventListener("mouseover", over);
     document.body.style.overflow = "hidden";
   }
@@ -46,11 +50,14 @@ function toggle() {
 
 // Disse funktioner tilføjer og fjerner hover klassen, og styres
 // af if-sætningerne i toogle funktionen.
+
+// Tilføjer hover effect
 function over() {
   console.log("over");
   burger.classList.add("hover");
 }
 
+// Fjerner hover effekt
 function done() {
   console.log("done");
   burger.classList.remove("hover");
